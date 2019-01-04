@@ -18,13 +18,14 @@
             <h1>Login</h1>
             <?= $error ?>
             <form action="registrar.php" method="post" id="formRegistroUsusarios">
-                <input type="text" name="dni" class="camposRegistroUsusarios" placeholder="DNI" minlength="9" maxlength="9" autofocus=""/>
-                <input type="text" name="nombre" class="camposRegistroUsusarios" placeholder="Nombre"/>
-                <input type="text" name="apellido1" class="camposRegistroUsusarios" placeholder="Apellido 1"/>
-                <input type="text" name="apellido2" class="camposRegistroUsusarios" placeholder="Apellido 2"/>
+                <input type="text" name="dni" class="camposRegistroUsusarios" placeholder="Cedula" minlength="10" maxlength="10" autofocus=""/>
+                <div id="salida"></div>
+				<input type="text" name="nombre" class="camposRegistroUsusarios" placeholder="Nombre"/>
+                <input type="text" name="apellido1" class="camposRegistroUsusarios" placeholder="Primer Apellido"/>
+                <input type="text" name="apellido2" class="camposRegistroUsusarios" placeholder="Segundo Apellido"/>
                 <input type="text" name="usuario" id="nombreUser"  placeholder="Usuario"/>
                 <input type="password" name="clave" id="claveUser"  minlength="6" maxlength="16" placeholder="Contraseña"/>
-                <input type="password" name="claveComprueba" id="claveUserComprueba" minlength="6" maxlength="16" placeholder=" Repetir Contraseña"/>
+                <input type="password" name="claveComprueba" id="claveUserComprueba" minlength="8" maxlength="16" placeholder=" Repetir Contraseña"/>
                 <button type="submit">Registrarme</button>
             </form>
             <br>

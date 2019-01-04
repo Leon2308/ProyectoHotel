@@ -78,7 +78,7 @@
                     <input type="hidden" name="accion" value="enviar"/>
                     <input type="text" name="nombre" required placeholder="Nombre" autofocus/>
                     <input type="text" name="apellido1" required placeholder="Apellido 1"/>
-                    <input type="text" name="apellido2" required placeholder="Apellido 2"/>
+                    <input type="text" name="apellido2" placeholder="Apellido 2"/>
                     <input type="email" name="email" required placeholder="Email"/>
                     <textarea rows="4" cols="37" id="textArea" name="comentario" placeholder="Comentario" ></textarea>
                     <button type="submit">Enviar</button>

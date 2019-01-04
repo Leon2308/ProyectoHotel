@@ -14,24 +14,24 @@ $(document).ready(function () {
     //Validación del formulario.
     $("#formRegistroUsusarios").validate({
         rules: {
-            clave: {required: true, minlength: 6, maxlength: 20},
+            clave: {required: true, minlength: 8, maxlength: 20},
             claveComprueba: {
                 equalTo: "#claveUser"
             },
-            dni: {required: true, minlength: 9, maxlength: 9},
+            dni: {required: true, minlength: 10, maxlength: 10},
             nombre: {required: true},
             apellido1: {required: true},
             apellido2: {required: true},
             usuario: {required: true}
         },
         messages: {
-            clave: "Clave de 6 carácteres mínimo",
-            dni: "Introduce un DNI válido",
-            nombre: "Introduce un nombre",
-            apellido1: "El campo está requerido",
-            apellido2: "El campo está requerido",
-            usuario: "El campo está requerido",
-            claveComprueba: "Introduce la misma clave"
+            clave: "La clave debe contener minimo 8 caracteres",
+            dni: "Introduce una cedula válida",
+            nombre: "Campo Requerido",
+            apellido1: "Campo Requerido",
+            apellido2: "Campo Requerido",
+            usuario: "Campo Requerido",
+            claveComprueba: "Las claves no coinciden"
         },
 
         errorPlacement: function (error, element) {
@@ -39,3 +39,30 @@ $(document).ready(function () {
         } //Inserta los mensajes de error por encima de cada campo.
     });
 });
+
+      function validar() {
+        var cad = document.getElementById("ced").value.trim();
+        var total = 0;
+        var longitud = cad.length;
+        var longcheck = longitud - 1;
+
+        if (cad !== "" && longitud === 10){
+          for(i = 0; i < longcheck; i++){
+            if (i%2 === 0) {
+              var aux = cad.charAt(i) * 2;
+              if (aux > 9) aux -= 9;
+              total += aux;
+            } else {
+              total += parseInt(cad.charAt(i)); // parseInt o concatenará en lugar de sumar
+            }
+          }
+
+          total = total % 10 ? 10 - total % 10 : 0;
+
+          if (cad.charAt(longitud-1) == total) {
+            document.getElementById("salida").innerHTML = ("Cedula Válida");
+          }else{
+            document.getElementById("salida").innerHTML = ("Cedula Inválida");
+          }
+        }
+      }

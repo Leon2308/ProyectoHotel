@@ -1,20 +1,50 @@
 <?php
 require_once 'compruebaDB.php';
-if ($_POST[accion] == enviar) {
-    $para = "moises_rodiguez@hotmail.com";
-    $titulo = 'Contacto Hotel';
-    $mensaje = "Nombre: " . $_POST[nombre] . "apellido1: " . $_POST[apellido1] .
-            "apellido2: " . $_POST[apellido2] . $_POST[comentario];
-    $cabeceras = 'From: ' . $_POST[email] . "\r\n" .
-            'Reply-To: ' . $_POST[email] . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
+require_once("phpmailer/src/PHPMailer.php");
+require_once("phpmailer/src/SMTP.php");
+require_once("phpmailer/src/Exception.php");
 
-    $bol = mail($para, $titulo, $mensaje, $cabeceras);
+if (isset($_POST["email"])) {
+    $mail = new PHPMailer\PHPMailer\PHPMailer;                             
+    try {
+        //Server settings
+        $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'contacto.hotelfuentealegre@gmail.com';                 // SMTP username
+        $mail->Password = 'hcgzipjarxzwwiaf';                           // SMTP password
+        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 587;                                    // TCP port to connect to
+		$mail->SMTPOptions = array(
+		'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+			)
+		);
 
-    if ($bol) {
-        $estado = "enviado";
-    } else {
-        $estado = "No enviado";
+        //Recipients
+        $mail->setFrom('contacto.hotelfuentealegre@gmail.com','Hotel Fuente Alegre');
+        $mail->addAddress('contacto.hotelfuentealegre@gmail.com', 'Contacto Hotel Fuente Alegre');
+		$asunto ='Nuevo Comentario Hotel';
+		
+        //Content
+		$cuerpo	= "<b>Remitente: </b> " . $_POST[nombre] . " " . $_POST[apellido1] .
+            " " . $_POST[apellido2] ." 
+			<br></br> <b>Email de Respuesta: </b> ".$_POST[email]."
+			<br></br> <b>Comentario</b>: 
+			<br></br> 
+			". $_POST[comentario];
+        $mail->isHTML(true);                                 
+        $mail->Subject = $asunto;
+        $mail->Body    = $cuerpo;
+
+        $mail->send();
+		$estado = "<small>Correo Enviado Exitosamente</small>";
+    } catch (Exception $e) {
+		echo "$e";
+       $estado = "<small>No se pudo enviar el correo</small>";
     }
 }
 

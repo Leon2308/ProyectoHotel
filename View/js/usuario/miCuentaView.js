@@ -5,16 +5,15 @@ $(document).ready(function () {
     //-----------------Modificacion datos usuario-------------------------
     $("#formModificar").validate({
         rules: {
-            DNI: {required: true, minlength: 9, maxlength: 9},
+            DNI: {required: true, minlength: 10, maxlength: 10},
             nombre: {required: true},
             apellido1: {required: true},
-            apellido2: {required: true}
+            apellido2: {required: false}
         },
         messages: {
-            DNI: "Debe introducir un dni Válido.",
-            nombre: "Debe introducir un Nombre.",
+            DNI: "Cédula Incorrecta",
+            nombre: "Debe introducir un nombre.",
             apellido1: "Debe introducir un apellido.",
-            apellido2: "Debe introducir un apellido.",
         }
     });
 

@@ -137,8 +137,7 @@ class Cliente {
     */
    public function modCliente() {
         $conexion = HotelDB::connectDB();
-        $modificacion = "UPDATE cliente SET  DNI=\"$this->dni\", "
-                . "nombre=\"$this->nombre\", apellido1=\"$this->apellido1\", "
+        $modificacion = "UPDATE cliente SET nombre=\"$this->nombre\", apellido1=\"$this->apellido1\", "
                 . "apellido2=\"$this->apellido2\""
                 . " WHERE codCliente=\"$this->codCliente\"";
         $conexion->query($modificacion);
