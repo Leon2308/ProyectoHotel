@@ -1,6 +1,6 @@
 <?php
-session_start();
-if ($_SESSION['logueadoAdmin'] == true) {
+session_start();  //empezar sesion 
+if ($_SESSION['logueadoAdmin'] == true) { //si la sesion fue iniciada correctamente
 require_once 'compruebaDB.php';
 require_once '../../Model/Reserva.php';
 
