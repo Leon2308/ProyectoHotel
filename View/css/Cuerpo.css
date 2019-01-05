@@ -23,7 +23,9 @@ a:link {
   margin-bottom: 1%; }
 
 .texto3D {
-  text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
+  /*text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
+  */
+  font-family: 'Jonah-Regular', sans-serif;
   font-size: 46px; }
 
 .contenedorCarusel {
@@ -379,8 +381,9 @@ textarea {
 
 .texto3D3 {
   margin-left: 0;
-  text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
-  font-size: 46px; }
+  font-family: 'Jonah-Regular', sans-serif;
+  /*text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
+  */font-size: 46px; }
 
 @media screen and (max-width: 1255px) {
   .texto3D3 {

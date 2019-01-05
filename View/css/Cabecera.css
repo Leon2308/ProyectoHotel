@@ -75,11 +75,12 @@
         }
 
         .texto3D2{
-          text-shadow: 1px 1px 0px rgb(230,230,230),
+          font-family: 'Jonah-Regular', sans-serif;
+		  /*text-shadow: 1px 1px 0px rgb(230,230,230),
           2px 2px 0px rgb(200,200,200),
           3px 3px 0px rgb(180,180,180),
           4px 4px 0px rgb(160,160,160),
-          /*Añadimos*/ 5px 5px 0px rgb(0,0,0), 8px 8px 20px rgb(0,0,0); 
+          Añadimos 5px 5px 0px rgb(0,0,0), 8px 8px 20px rgb(0,0,0); */
           font-size: 46px;
         }
         

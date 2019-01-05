@@ -3,8 +3,8 @@
   font-family: 'Francois One';
   src: url(../fuentes/FrancoisOne.ttf); }
 @font-face {
-  font-family: 'GreatVibes-Regular';
-  src: url(../fuentes/daniel.ttf); }
+  font-family: 'Jonah-Regular';
+  src: url(../fuentes/Jonah-Regular.ttf); }
 body {
   margin: 0; }
 
@@ -23,7 +23,9 @@ a:link {
   margin-bottom: 1%; }
 
 .texto3D {
-  text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
+  font-family: 'Jonah-Regular', sans-serif;
+  /*text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
+  */
   font-size: 46px; }
 
 .contenedorCarusel {
@@ -52,7 +54,7 @@ a:link {
 
 .footerCarousel {
   width: 100%;
-  background-color: rgba(205, 133, 63, 0.7);
+  background-color: rgba(224, 177, 132 , 0.7);
   position: absolute;
   bottom: 0px;
   text-align: center;
@@ -63,8 +65,8 @@ a:link {
   display: inline; }
 
 .BienvenidoCarousel {
-  font-family: 'GreatVibes-Regular', sans-serif;
-  font-size: 3em;
+  font-family: 'Jonah-Regular', sans-serif;
+  font-size: 2.5em;
   color: white; }
 
 #galeriaAnimada > img {
@@ -412,8 +414,9 @@ textarea {
 
 .texto3D3 {
   margin-left: 0;
-  text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
-  font-size: 46px; }
+  font-family: 'Jonah-Regular', sans-serif;
+  /*text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
+ */ font-size: 46px; }
 
 .form-group-Usuario{
     margin: 4px 0;
@@ -823,8 +826,9 @@ a {
   display: none; }
 
 .texto3D2 {
-  text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
-  font-size: 46px; }
+  font-family: 'Jonah-Regular', sans-serif;
+  /*text-shadow: 1px 1px 0px #e6e6e6, 2px 2px 0px #c8c8c8, 3px 3px 0px #b4b4b4, 4px 4px 0px #a0a0a0, 5px 5px 0px black, 8px 8px 20px black;
+ */ font-size: 46px; }
 
 .topnav {
   display: none; }
