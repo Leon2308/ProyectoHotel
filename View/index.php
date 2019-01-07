@@ -68,12 +68,12 @@
               <span class="bienvenidaInicio">Reserva una habitación para el día de entrada y salida que desees.</span>
               <span class="bienvenidaInicio">Puedes ver mas información en las secciones servicios y habitaciones.</span>
             </div>
-<!--            <div class="bienvenidaSpan">
+            <div class="bienvenidaSpan">
                 <span class="bienvenidaInicio">Bienvenido al hotel Fuente Alegre</span><br>
               <span class="bienvenidaInicio">Reserva una habitación para el día de entrada y salida que desees.</span>
               <span class="bienvenidaInicio">Puedes ver mas información sobre nuestras habitaciones y servicios en las 
                   secciones servicios y habitaciones.</span>
-            </div>-->
+            </div>
             <div class="redesSociales">
               <ul class="listaSocial">
                 <?php 
