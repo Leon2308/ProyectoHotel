@@ -1,5 +1,5 @@
 <?php
-define('SERVER', '127.0.0.1:3307');
+define('SERVER', 'localhost');
 define('DB', 'hotel');
 define('USER', 'root');
 define('PASSWORD', '');
