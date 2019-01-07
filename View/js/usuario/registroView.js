@@ -1,4 +1,5 @@
 $(document).ready(function () {
+   /*
     $("#claveUser").focusin(function () {
         $("#nombreUser").fadeOut(300, function () {
             $("#claveUserComprueba").fadeIn(200);
@@ -10,7 +11,7 @@ $(document).ready(function () {
             $("#nombreUser").fadeIn(200);
         });
     }); //Oculta el campo de comprobar la clave y muestra el de usuario
-
+*/
     //Validación del formulario.
     $("#formRegistroUsusarios").validate({
         rules: {
