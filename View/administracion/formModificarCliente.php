@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="inputDni">DNI:</label>
+                    <label for="inputDni">Cédula:</label>
                     <input type="text" name="DNI" id="inputDni" class="form-control" value="">
                 </div>
 

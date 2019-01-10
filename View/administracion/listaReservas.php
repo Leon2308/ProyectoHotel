@@ -7,7 +7,7 @@
     $opcionesOrden["h.codHabitacion"] = "codCliente";
     $opcionesOrden["c.nombre"] = "nombre";
     $opcionesOrden["c.apellido1"] = "Apellido1";
-    $opcionesOrden["c.dni"] = "DNI";
+    $opcionesOrden["c.dni"] = "Cédula";
     $opcionesOrden["r.fechaEntrada"] = "Fecha Entrada";
     $opcionesOrden["r.fechaSalida"] = "Fecha Salida";
 
@@ -49,7 +49,7 @@
                 <th>Nombre</th>
                 <th>Apellido1</th>
                 <th>Apellido2</th>
-                <th>DNI</th>
+                <th>Cédula</th>
                 <th>Fecha Entrada</th>
                 <th>Fecha Salida</th>
                 <th>Edición</th>
