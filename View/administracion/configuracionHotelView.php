@@ -386,7 +386,6 @@ if ($_SESSION['logueadoAdmin']) {
                                 <form method="post" id="img2GaleriaForm" enctype="multipart/form-data">
                                     <input type="file" name="img2Galeria" id="imagen2Galeria" class="btn btn-info fichero"/>
                                 <input type="hidden" name="id" id="id" value="img2Galeria"/></td>
-
                             </form>
                         </tr>
 
