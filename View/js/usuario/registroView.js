@@ -22,7 +22,7 @@ $(document).ready(function () {
             dni: {required: true, minlength: 10, maxlength: 10},
             nombre: {required: true},
             apellido1: {required: true},
-            apellido2: {required: true},
+            apellido2: {required: false},
             usuario: {required: true}
         },
         messages: {
@@ -30,7 +30,6 @@ $(document).ready(function () {
             dni: "Introduce una cedula válida",
             nombre: "Campo Requerido",
             apellido1: "Campo Requerido",
-            apellido2: "Campo Requerido",
             usuario: "Campo Requerido",
             claveComprueba: "Las claves no coinciden"
         },
