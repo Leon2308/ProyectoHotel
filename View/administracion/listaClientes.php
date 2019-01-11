@@ -13,7 +13,7 @@
         <?php
         $opcionesOrden = array();
         $opcionesOrden["codCliente"] = "codCliente";
-        $opcionesOrden["dni"] = "C.I.:";
+        $opcionesOrden["cédula"] = "C.I.:";
         $opcionesOrden["nombre"] = "Nombre";
         $opcionesOrden["apellido1"] = "Apellido 1";
         $opcionesOrden["apellido2"] = "Apellido 2";
@@ -52,7 +52,7 @@
             <thead>
                 <tr class="bg-primary">
                     <th>CodCliente</th>
-                    <th>DNI</th>
+                    <th>Cédula</th>
                     <th>Nombre</th>
                     <th>Apellido 1</th>
                     <th>Apellido 2</th>
