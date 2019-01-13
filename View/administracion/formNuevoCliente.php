@@ -9,7 +9,7 @@
             <form action="" class="formCentrado" id="formNuevoCliente" method="post">
 
                 <div class="form-group">
-                    <label for="dniNuevo">DNI:</label>
+                    <label for="dniNuevo">Cédula:</label>
                     <input type="text" name="DNI" id="dniNuevo" class="form-control" value="">
                 </div>
 

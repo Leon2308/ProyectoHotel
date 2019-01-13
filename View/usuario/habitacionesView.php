@@ -68,26 +68,26 @@
                             ?>
                             <tr>
                                 <td>
-                                    Habitación Nº <?= $hab->GetCodHabitacion() ?>
+                                    Habitación # <?= $hab->GetCodHabitacion() ?>
                                 </td>
                                 <td>
-                                    Habitacion <?= $hab->GetTipo() ?>
+                                    <?= $hab->GetTipo() ?>
                                 </td>
                                 <td>
-                                    Capacidad <?= $hab->GetCapacidad() ?>
+                                    <?= $hab->GetCapacidad() ?> Personas
                                 </td>
                                 <td>
                                     Planta <?= $hab->GetPlanta() ?>
                                 </td>
                                 <td>
-                                    Precio <?= $hab->GetTarifa() ?>€
+                                    $ <?= $hab->GetTarifa() ?>
                                 </td>
                                 <td>
                                     <form name="reservar" action="confirmarReserva.php" method="GET">
                                         <input type="hidden"  name="codHabitacion" value="<?= $hab->GetCodHabitacion() ?>">
                                         <input type="hidden"  name="fechaEntrada" value="<?= $fechaEntrada ?>">
                                         <input type="hidden"  name="fechaSalida" value="<?= $fechaSalida ?>">
-                                        <input type="submit" class="btnEnvio2NoMargin" value="Reservar" />
+                                        <input type="submit" class="btnEnvio2NoMargin" value="Reservar ahora" />
                                     </form>
                                 </td>
                             </tr>

@@ -32,14 +32,14 @@ $(document).ready(function () {
     $("#formModificar").validate({
         rules: {
             codCliente: {required: true, number: true},
-            DNI: {required: true, minlength: 9, maxlength: 9},
+            DNI: {required: true, minlength: 10, maxlength: 10},
             nombre: {required: true},
             apellido1: {required: true},
             apellido2: {required: true}
         },
         messages: {
             codCliente: "Debe introducir el código numérico del cliente.",
-            DNI: "Debe introducir un dni Válido.",
+            DNI: "Debe introducir una cédula válida.",
             nombre: "Debe introducir un Nombre.",
             apellido1: "Debe introducir un apellido.",
             apellido2: "Debe introducir un apellido."

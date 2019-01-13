@@ -65,7 +65,7 @@
         <td class="tipo"><?= $habitacion->getTipo() ?></td>
         <td class="capacidad"><?= $habitacion->getCapacidad() ?></td>
         <td class="planta"><?= $habitacion->getPlanta() ?></td>
-        <td class="tarifa"><?= $habitacion->getTarifa() ?>€</td>
+        <td class="tarifa">$ <?= $habitacion->getTarifa() ?></td>
         <td>
           <button type="button" class="btn btn-info btn-modificar">Modificar</button>
         </td>

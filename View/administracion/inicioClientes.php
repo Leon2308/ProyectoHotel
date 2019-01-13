@@ -69,9 +69,9 @@
             <div class="form-group">
                 <form class="form-inline formularioFloatLeft" name="filtrar" action="index.php" method="GET">
                     <div class="form-group">
-                        <label for="buscadorDni">DNI: </label>
+                        <label for="buscadorDni">Cédula: </label>
                         <input type="text" class="form-control" id="buscadorDni" name="dni" 
-                               placeholder="Introduce un DNI">
+                               placeholder="Introduce una cédula">
                     </div>
                     <button type="submit" class="btn btn-default">Filtrar</button>
                 </form>
