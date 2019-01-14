@@ -82,10 +82,12 @@ $(document).ready(function () {
     //Boton Modificar	
     $(document).on("click", ".btn-modificar", function () {
         var numeroPagina2 = $("spam.pagActual").text();
+        var select = document.getElementById('tipoNuevo');
         codHabitacion = $(this).parents("tr").attr("data-codHabitacion");
         $("#inputCodHabitacion").val(codHabitacion);
 
-        $("#inputTipo").val($.trim($(this).parent().siblings("td.tipo").text()));
+      //  $("#inputTipo").val($.trim($(this).parent().siblings("td.tipo").text()));
+		$("#inputTipo").val(this.options[select.selectedIndex]);
 
         $("#inputCapacidad").val($.trim($(this).parent().siblings("td.capacidad").text()));
 

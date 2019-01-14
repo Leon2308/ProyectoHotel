@@ -11,10 +11,17 @@
                 <input type="text" name="codHabitacion" id="codHabitacionNuevo" class="form-control" disabled value="">
             </div>
 
+			<p></p>
             <div class="form-group">
                 <label for="tipoNuevo">Tipo:</label>
-                <input type="text" name="tipo" id="tipoNuevo" class="form-control">
+                <!--   <input type="text" name="tipo" id="tipoNuevo" class="form-control"> -->
+                <select name="tipo" id="tipoNuevo" class="form-control">
+                        <option value="individual">Individual</option>
+                        <option value="doble" selected="">Doble</option>
+                        <option value="familiar" selected="">Familiar</option>
+                </select>
             </div>
+				<p></p>
 
             <div class="form-group">
                 <label for="capacidadNuevo">Capacidad:</label>
