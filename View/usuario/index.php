@@ -10,7 +10,7 @@
     <body class="fondoCuerpo">
         <div class="cabecera">
             <div class="logoCabecera">
-                <img src="../../View/img/uploads/<?=$logo->nombre?>" class="imgLogoResponsive"> 
+                <img src="../../View/img/uploads/<?=$logo->nombre?>" class="imgLogoResponsive">
             </div>
             <div class="flex-container space-between">
                 <a href="../index.php" class="flex-item"><p>INICIO <br>Bienvenidos</p></a>
@@ -27,27 +27,27 @@
             </div>
             <div class="redesSociales">
                 <ul class="listaSocial">
-                <?php 
-                
+                <?php
+
                     if($estadoImg['facebook']->estado == "habilitado"){
-                         
+
                         ?><a href="<?=$urlSociales['facebook']->ruta?>" target="_blank"><li><span id="elemento1"></span></li></a><?php
-                    } 
-                    
+                    }
+
                     if($estadoImg['googlePlus']->estado == "habilitado"){
                         ?><a href="<?=$urlSociales['googlePlus']->ruta?>" target="_blank"><li><span id="elemento2"></span></li></a><?php
                     }
-                    
+
                     if($estadoImg['instagram']->estado == "habilitado"){
                         ?><a href="<?=$urlSociales['instagram']->ruta?>" target="_blank"><li><span id="elemento3"></span></li></a><?php
                     }
-                    
+
                     if($estadoImg['twitter']->estado == "habilitado"){
                         ?><a href="<?=$urlSociales['twitter']->ruta?>" target="_blank"><li><span id="elemento4"></span></li></a><?php
                     }
                 ?>
               </ul>
-            </div> 
+            </div>
 
             <ul class="menu1">
                 <li class="menu2 esquinaI"><a href="miCuenta.php">Bienvenid@ <?= $usuario ?></a></li>
@@ -66,6 +66,7 @@
               <th class="tablahabitacionesTh">Precio/Noche</th>
               <th class="tablahabitacionesTh">Fecha Entrada</th>
               <th class="tablahabitacionesTh">Fecha Salida</th>
+              <th class="tablahabitacionesTh">Opciones</th>
               <?php
                 foreach ($data['datos'] as $hab) {
               ?>
@@ -74,22 +75,25 @@
                   Habitación Nº <?= $hab->GetCodHabitacion()?>
                 </td>
                 <td>
-                  Habitacion <?= $hab->GetTipo()?>
+                  Hab. <?= $hab->GetTipo()?>
                 </td>
                 <td>
-                  Capacidad <?= $hab->GetCapacidad()?>
+                  <?= $hab->GetCapacidad()?> persona /as
                 </td>
                 <td>
                   Planta <?= $hab->GetPlanta()?>
                 </td>
                 <td>
-                  Precio <?= $hab->GetTarifa()?>€
+                  <?= $hab->GetTarifa()?>€
                 </td>
                 <td>
                   <?= $hab->GetFechaEntrada()?>
                 </td>
                 <td>
                   <?= $hab->GetFechaSalida()?>
+                </td>
+                <td>
+                  Cancelar Reserva
                 </td>
               </tr>
               <?php
