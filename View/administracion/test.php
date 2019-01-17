@@ -41,7 +41,7 @@
 
             <div>
     <div class="panel panel-primary">
-        <div class="panel-heading cabeceraDivForm">Modificación de clientes</div>
+        <div class="panel-heading cabeceraDivForm">Modificación</div>
         <div class="cuadroForm">
             <form action="modificarCliente.php" class="formCentrado" id="formModificar" method="post">
                 <div class="form-group">
