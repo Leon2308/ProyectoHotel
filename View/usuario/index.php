@@ -84,7 +84,7 @@
                   Planta <?= $hab->GetPlanta()?>
                 </td>
                 <td>
-                  <?= $hab->GetTarifa()?>€
+                  <?= $hab->GetTarifa()?>$
                 </td>
                 <td>
                   <?= $hab->GetFechaEntrada()?>
