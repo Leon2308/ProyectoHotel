@@ -1,14 +1,13 @@
 <?php
-
 /**
- * Clase para operaciones sobre el listado de habitaciones.
- *
- * @author Moisés
+ Clase para operaciones sobre el listado de habitaciones.
+
  */
 
 require_once 'HotelDB.php';
 
 class Habitacion {
+	
     private $codHabitacion;
     private $tipo;
     private $capacidad;
@@ -94,6 +93,7 @@ class Habitacion {
     */
     public static function getHabitacionesDisp($fechaEntradaEsp, $fechaSalidaEsp, $personas) {
         $conexion = HotelDB::connectDB();
+		
         $seleccion = "SELECT h.codHabitacion, h.tipo, h.planta, h.tarifa, h.capacidad"
         . " FROM habitacion h "
         . "WHERE EXISTS (SELECT * FROM reserva r WHERE r.codHabitacion = h.codHabitacion"
@@ -102,6 +102,7 @@ class Habitacion {
         . " OR EXISTS (SELECT * FROM reserva r WHERE r.codHabitacion = h.codHabitacion "
         . "AND ((r.fechaEntrada > $fechaEntradaEsp AND r.fechaSalida < $fechaSalidaEsp)))) = FALSE "
         . "AND h.capacidad=$personas ";
+		
         $consulta = $conexion->query($seleccion);
         $habitaciones = [];
 
@@ -122,16 +123,21 @@ class Habitacion {
         $conexion->query($borrado);
     }
     
+	
+	
     /**
     * Método que modifica los datos de la habitación creada (new Habitación()).
     */
+	
     public function modHabitacion() {
         $conexion = HotelDB::connectDB();
         $modificacion = "UPDATE habitacion SET  tipo=\"$this->tipo\", "
       . "capacidad=\"$this->capacidad\", planta=\"$this->planta\", tarifa=\"$this->tarifa\" "        
       . " WHERE codHabitacion=\"$this->codHabitacion\"";
+	  
         $conexion->query($modificacion);
     }
+	
     
     /**
     * Método que agrega una nueva habitación

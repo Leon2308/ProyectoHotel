@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Clase para operaciones con los Usuarios.
  *
@@ -10,8 +8,6 @@
 require_once 'HotelDB.php';
 
 class Usuario {
- 
-
-    
+	
 
 }

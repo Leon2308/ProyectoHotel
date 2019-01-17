@@ -71,7 +71,7 @@
       <p>¿Esta seguro que desea eliminar la habitación?</p>
     </div>
       
-    <div id="dialogomodificar" title="Modificar Cliente">
+    <div id="dialogomodificar" title="Modificar Habitación">
         <?php include "../../View/administracion/formModificarHabitacion.php"?>
     </div>
       
