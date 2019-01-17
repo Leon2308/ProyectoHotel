@@ -1,7 +1,5 @@
 <?php
-
 include_once 'HotelDB.php';
-
 /**
  * Clase para obtener datos de habitación y Cliente.
  *
@@ -60,9 +58,9 @@ class ReservaHabitacion {
      * Este método se usa a la hora de msotrar los datos de reserva en el panel del usuario.
      * @param String $usuario Usuario de la sesión para el que se obtienen los datos.
      * @return Array de objetos con los datos de las habitaciones reservadas
-     * y las fechas de entrada y salida.
-     * 
+     * y las fechas de entrada y salida. 
      */
+	 
     public static function getDatosReservaHab($usuario) {
         $conexion = HotelDB::connectDB();
         $seleccion = "SELECT h.codHabitacion, h.tipo, h.capacidad, h.planta,h.tarifa,"
@@ -71,9 +69,9 @@ class ReservaHabitacion {
                 . "FROM reserva r , login l , habitacion h "
                 . "WHERE r.codCliente = l.codCliente "
                 . "AND l.usuario = '$usuario' AND h.codHabitacion = r.codHabitacion";
+				
         $consulta = $conexion->query($seleccion);
         $datos = [];
-
         while ($registro = $consulta->fetchObject()) {
             $datos[] = new ReservaHabitacion($registro->codHabitacion, $registro->tipo, $registro->capacidad, $registro->planta, $registro->tarifa, $registro->fechaEntrada, $registro->fechaSalida);
         }
