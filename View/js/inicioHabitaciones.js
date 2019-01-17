@@ -82,16 +82,20 @@ $(document).ready(function () {
     //Boton Modificar	
     $(document).on("click", ".btn-modificar", function () {
         var numeroPagina2 = $("spam.pagActual").text();
-        var select = document.getElementById('tipoNuevo');
+        var selectTipo = document.getElementById('tipoNuevo');
+        var selectCap = document.getElementById('capacidadNuevo');
+        var selectPlanta = document.getElementById('plantaNuevo');
         codHabitacion = $(this).parents("tr").attr("data-codHabitacion");
         $("#inputCodHabitacion").val(codHabitacion);
 
-      //  $("#inputTipo").val($.trim($(this).parent().siblings("td.tipo").text()));
-		$("#inputTipo").val(this.options[select.selectedIndex]);
+    //  $("#inputTipo").val($.trim($(this).parent().siblings("td.tipo").text()));
+        $("#inputTipo").val(this.options[selectTipo.selectedIndex]);
 
-        $("#inputCapacidad").val($.trim($(this).parent().siblings("td.capacidad").text()));
+    //  $("#inputCapacidad").val($.trim($(this).parent().siblings("td.capacidad").text()));
+        $("#inputCapacidad").val(this.options[selectCap.selectedIndex]);
 
-        $("#inputPlanta").val($.trim($(this).parent().siblings("td.planta").text()));
+    //  $("#inputPlanta").val($.trim($(this).parent().siblings("td.planta").text()));
+        $("#inputPlanta").val(this.options[selectPlanta.selectedIndex]);
 
         $("#inputTarifa").val($.trim($(this).parent().siblings("td.tarifa").text()));
 
