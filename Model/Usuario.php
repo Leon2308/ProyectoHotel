@@ -8,5 +8,14 @@
 require_once 'HotelDB.php';
 
 class Usuario {
-     
+	
+	
+   /**   private $codCliente;
+    private $dni;
+    private $nombre;
+    private $apellido1;
+    private $apellido2;
+	*/
+	
+	
 }
