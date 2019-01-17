@@ -23,5 +23,16 @@ class Usuario {
     private $apellido1;
     private $apellido2;**/
 	
+	/** private $codCliente;
+    private $dni;
+    private $nombre;
+    private $apellido1;
+    private $apellido2;*/
 	
+	
+	/** private $codCliente;
+    private $dni;
+    private $nombre;
+    private $apellido1;
+    private $apellido2;*/
 }
