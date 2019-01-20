@@ -9,7 +9,7 @@ body {
   margin: 0; }
 
 .fondoCuerpo {
-  background-color: #ecce86; }
+  background-color: #e5a759; } /* ; linear-gradient(Saddlebrown , Sienna)*/ 
 
 a:link {
   text-decoration: none; }
@@ -265,9 +265,9 @@ textarea {
   height: 36px;
   font-family: 'Francois One', sans-serif; }
 .tablaHabitaciones tr:nth-child(even) {
-  background-color: #ffa229; }
+  background-color: #5e834a; }
 .tablaHabitaciones tr:nth-child(odd) {
-  background-color: #ffd297; }
+  background-color: #b9beae; }
 
 .btnEnvio2NoMargin {
   width: 71%;
@@ -383,7 +383,7 @@ textarea {
   margin-left: 3%; }
 
 .textoDescripcionesBottom {
-  margin-bottom: 5%; 
+  margin-bottom: 5%;
 }
 
 .limpiarFloat {
@@ -541,7 +541,7 @@ textarea {
 @media screen and (max-width: 680px) {
   redesSociales {
     display: none; }
-  
+
    .contenedor{
       width: 100%;
      }
@@ -666,11 +666,11 @@ textarea {
 
 /*
   @media screen and (max-width: 1000px){ /*MÔö£Ôöéviles*/
-      /*    
+      /*
           .contenedorForm{
-            width:60%;  
+            width:60%;
             margin: 2% auto 0 auto;
-          } 
+          }
           div .form-group > input[type=text]{
             height: 3rem;
             font-size: 2rem;
@@ -686,16 +686,16 @@ textarea {
 
           .cabeceraDivForm{
               text-align: center;
-              font-size: 2rem; 
+              font-size: 2rem;
           }
         }
-      
+
          @media screen and (max-width: 640px){ /*MÔö£Ôöéviles*/
-        /*  
+        /*
           .contenedorForm{
-            width:100%;  
+            width:100%;
             margin: 2% auto 0 auto;
-          } 
+          }
            div .form-group > input[type=text]{
             height: 4rem;
             font-size: 2rem;
@@ -711,7 +711,7 @@ textarea {
 
           .cabeceraDivForm{
               text-align: center;
-              font-size: 4rem; 
+              font-size: 4rem;
           }
         }*/
 .menu1 {
@@ -946,7 +946,7 @@ a {
     margin-top: 20px; } }
 @media screen and (max-width: 790px) and (max-width: 383px) {
   .contenedorTexto2 {
-    padding-top: 16px; } 
+    padding-top: 16px; }
   .bienvenidaSpan2{
     display: none;
 }
@@ -967,9 +967,9 @@ transition: transform 1s;
 }
 
 #elemento1:hover, #elemento2:hover, #elemento3:hover, #elemento4:hover {
-  -o-transform: rotate(360deg); 
-  -moz-transform: rotate(360deg); 
-  -webkit-transform: rotate(360deg); 
+  -o-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 

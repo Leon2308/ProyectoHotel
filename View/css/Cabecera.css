@@ -24,8 +24,8 @@
           height: 70px;
           padding:5px;
           margin: auto;
-          display:-webkit-flex; 
-          display: -ms-flexbox; 
+          display:-webkit-flex;
+          display: -ms-flexbox;
           display: flex;
           align-items: flex-end;
         }
@@ -47,19 +47,19 @@
         }
 
         .flex-item p{
-          width:100%; 
+          width:100%;
           -webkit-align-self: center;
           -ms-flex-item-align: center;
-          align-self: center; 
+          align-self: center;
           margin-left: 6px;
-          font-size: 1rem; 
+          font-size: 1rem;
           font-family: 'Francois One', sans-serif;
           color: antiquewhite;
 
         }
 
         .flex-item p::first-line{
-          font-size: 1rem; 
+          font-size: 1rem;
         }
 
         .flex-container.space-between{
@@ -83,7 +83,7 @@
           Añadimos 5px 5px 0px rgb(0,0,0), 8px 8px 20px rgb(0,0,0); */
           font-size: 46px;
         }
-        
+
         .topnav{
             display: none;
         }
@@ -91,38 +91,38 @@
             .flex-item{
                 width: 16%;
             }
-            
+
             .logoCabecera{
-               margin-top: 1.4%; 
+               margin-top: 1.4%;
             }
-            
+
             .contenedorTexto{
                 margin-right: -10%;
             }
-            
+
         }
-        
+
         @media screen and (max-width: 880px){
             .flex-item{
                 width: 18%;
             }
-            
+
             .logoCabecera{
                 margin-top: 2.4%;
             }
         }
-        
+
         @media screen and (max-width: 790px){
             .flex-container{
                 display: none;
-                
+
             }
 
             .flex-item{
                 display: none;
-                
+
             }
-            
+
             .logoCabecera{
                 margin-top: 1.5%;
                 margin-left: 1%;
@@ -131,11 +131,11 @@
             .imgLogoResponsive{
                 width: 100px;
             }
-            
+
             .logoCabecera{
                 width: 100px;
             }
-            
+
             body {
                 margin:0;
             }
@@ -169,12 +169,12 @@
             ul.topnav li.icon {
                 display: none;
             }
-            
+
             .contenedorTexto2{
                 display: block;
                 padding-top: 26px;
             }
-            
+
             .contenedorTexto{
                 display: none;
             }
@@ -189,7 +189,7 @@
                 float: right;
                 display: inline-block;
               }
-              
+
               .barrasMenu{
                 font-size:18px;
               }
@@ -212,23 +212,23 @@
                 display: block;
                 text-align: left;
               }
-           
+
             }
-            
+
              @media screen and (max-width:525px) {
                  .texto3D2{
                     font-size: 1.9rem;
                  }
-                 
+
                  .contenedorTexto2{
                     padding-top: 30px;
                 }
-                
-                .formularioReserva{ 
+
+                .formularioReserva{
                     width: 96%;
                     margin-left: 2%;
                 }
-                
+
                 .tituloReservar{
                     font-size: 2.6rem;
                 }
@@ -236,26 +236,25 @@
                     width: 200px;
                     font-size: 1.4rem;
                 }
-                
+
                 .labelFecha{
-                   font-size: 1.2rem; 
+                   font-size: 1.2rem;
                 }
-                
+
                 .inputPersonas{
-                    font-size: 1.4rem; 
+                    font-size: 1.4rem;
                 }
-                
+
                 .btnEnvio1{
-                   font-size: 1.4rem; 
+                   font-size: 1.4rem;
                    margin-top: 20px;
                 }
              }
-             
-             @media screen and (max-width:383px) {   
+
+             @media screen and (max-width:383px) {
                  .contenedorTexto2{
                     padding-top: 16px;
                 }
              }
-            
-        }
 
+        }
