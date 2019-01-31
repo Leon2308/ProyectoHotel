@@ -93,7 +93,7 @@
                   <?= $hab->GetFechaSalida()?>
                 </td>
                 <td>
-                  Cancelar Reserva
+                   <a href="borrarReserva.php?idHab=<?= $hab->GetCodHabitacion()?>" type="button">Cancelar Reserva</a>
                 </td>
               </tr>
               <?php
