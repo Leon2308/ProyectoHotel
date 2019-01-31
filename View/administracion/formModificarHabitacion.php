@@ -19,7 +19,7 @@
 
             <div class="form-group">
                 <label for="inputCapacidad">Capacidad:</label>
-                <input type="text" name="capacidad" id="inputCapacidad" class="form-control" value="" readonly="readonly>
+                <input type="text" name="capacidad" id="inputCapacidad" class="form-control" value="" >
             </div>
 
             <div class="form-group">
@@ -29,7 +29,7 @@
 
             <div class="form-group">
                 <label for="inputTarifa">Tarifa:</label>
-                <input type="text" name="tarifa" id="inputTarifa" class="form-control" value="">
+                <input type="text" name="tarifa" id="inputTarifa" class="form-control" value="" >
             </div>
         </form>
     </div>
