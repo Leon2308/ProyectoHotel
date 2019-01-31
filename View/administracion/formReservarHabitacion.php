@@ -38,10 +38,12 @@
             <input type="text" name="codHabitacion" id="inputCodHabitacionReservar" class="form-control" value="">
           </div>
 
+          <p></p>
           <div class="form-group">
             <label for="inputfechaEntrada">FechaEntrada:</label>
             <input type="date" name="fechaEntrada" id="inputfechaEntradaReservar" class="form-control" value="">
           </div>
+          <p></p>
 
           <div class="form-group">
             <label for="inputFechaSalida">FechaSalida:</label>

@@ -265,9 +265,9 @@ textarea {
   height: 36px;
   font-family: 'Francois One', sans-serif; }
 .tablaHabitaciones tr:nth-child(even) {
-  background-color: #ffa229; }
+  background-color: #5e834a; }
 .tablaHabitaciones tr:nth-child(odd) {
-  background-color: #ffd297; }
+  background-color: #b9beae; }
 
 .btnEnvio2NoMargin {
   width: 71%;

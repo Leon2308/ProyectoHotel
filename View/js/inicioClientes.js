@@ -142,7 +142,7 @@ $(document).ready(function () {
     //------------------------- Nuevo Cliente-----------------------------
     $("#formNuevoCliente").validate({
         rules: {
-            DNI: {required: true, minlength: 9, maxlength: 9},
+            DNI: {required: true, minlength: 10, maxlength: 10},
             nombre: {required: true},
             apellido1: {required: true},
             apellido2: {required: true},
@@ -150,7 +150,7 @@ $(document).ready(function () {
             clave: {required: true}
         },
         messages: {
-            DNI: "Debe introducir un dni Válido.",
+            DNI: "Debe introducir una cédula válida.",
             nombre: "Debe introducir un Nombre.",
             apellido1: "Debe introducir un apellido.",
             apellido2: "Debe introducir un apellido.",

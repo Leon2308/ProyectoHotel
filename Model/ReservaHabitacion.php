@@ -15,7 +15,7 @@ class ReservaHabitacion {
     private $fechaEntrada;
     private $fechaSalida;
 
-    function __construct($codHabitacion, $tipo, $capacidad, $planta, $tarifa, $fechaEntrada, $fechaSalida) {
+     function __construct($codHabitacion, $tipo, $capacidad, $planta, $tarifa, $fechaEntrada, $fechaSalida) {
         $this->codHabitacion = $codHabitacion;
         $this->tipo = $tipo;
         $this->capacidad = $capacidad;
@@ -25,7 +25,7 @@ class ReservaHabitacion {
         $this->fechaSalida = $fechaSalida;
     }
     
-    function getCodHabitacion() {
+	function getCodHabitacion() {
         return $this->codHabitacion;
     }
 
@@ -52,16 +52,8 @@ class ReservaHabitacion {
     function getFechaSalida() {
         return $this->fechaSalida;
     }
-
-        /**
-     * Método que devuelve los datos de una habitación y las fechas de reserva
-     * Este método se usa a la hora de msotrar los datos de reserva en el panel del usuario.
-     * @param String $usuario Usuario de la sesión para el que se obtienen los datos.
-     * @return Array de objetos con los datos de las habitaciones reservadas
-     * y las fechas de entrada y salida. 
-     */
-	 
-    public static function getDatosReservaHab($usuario) {
+	
+	public static function getDatosReservaHab($usuario) {
         $conexion = HotelDB::connectDB();
         $seleccion = "SELECT h.codHabitacion, h.tipo, h.capacidad, h.planta,h.tarifa,"
                 . "DATE_FORMAT(r.fechaEntrada, '%d/%m/%Y') as fechaEntrada,"
@@ -77,5 +69,4 @@ class ReservaHabitacion {
         }
         return $datos;
     }
-
 }

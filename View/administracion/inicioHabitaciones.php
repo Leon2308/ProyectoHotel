@@ -67,7 +67,7 @@
       </div>
     </div>
       
-    <div id="dialogoborrar" title="Eliminar Cliente">
+    <div id="dialogoborrar" title="Eliminar Habitación">
       <p>¿Esta seguro que desea eliminar la habitación?</p>
     </div>
       
