@@ -25,5 +25,31 @@ class ReservaHabitacion {
         $this->fechaSalida = $fechaSalida;
     }
     
+	function getCodHabitacion() {
+        return $this->codHabitacion;
+    }
 
+    function getTipo() {
+        return $this->tipo;
+    }
+
+    function getCapacidad() {
+        return $this->capacidad;
+    }
+
+    function getPlanta() {
+        return $this->planta;
+    }
+
+    function getTarifa() {
+        return $this->tarifa;
+    }
+
+    function getFechaEntrada() {
+        return $this->fechaEntrada;
+    }
+
+    function getFechaSalida() {
+        return $this->fechaSalida;
+    }
 }
